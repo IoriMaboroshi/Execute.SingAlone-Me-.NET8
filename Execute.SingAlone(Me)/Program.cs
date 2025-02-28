@@ -30,7 +30,7 @@ namespace Execute.SingAlone_Me_
             //by: Mili
             //To Be added Sustain++
 
-            string musicFile = "executeMe.mp3";
+            string musicFile = "ghost.mp3";
             var audioRender = new AudioFileReader(musicFile);
             var songTask = Task.Run(() =>
             {

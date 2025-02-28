@@ -37,6 +37,56 @@ namespace Execute.SingAlone_Me_
                 Console.WriteLine("An error occurred while reading the file.");
             }
         }
+        public static void readFileColor(string fileName)
+        {
+            string filePath = fileName;
+            try
+            {
+                using (StreamReader reader = new StreamReader(filePath + ".txt"))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        foreach (char c in line)
+                        {
+                            // Change color based on the character
+                            if (c == '+')
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                            }
+                            else if (c == '$' || c == 'X')
+                            {
+                                Console.ForegroundColor = ConsoleColor.Yellow;
+                            }
+                            else
+                            {
+                                // Reset to default color for other characters
+                                Console.ResetColor();
+                            }
+
+                            // Print the character
+                            Console.Write(c);
+
+                            // Reset the color after printing each character
+                            Console.ResetColor();
+                        }
+                        // Print a new line after each line in the file
+                        Console.WriteLine();
+
+                        // Adding a small delay
+                        Thread.Sleep(5);
+                    }
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("The file could not be found.");
+            }
+            catch (IOException)
+            {
+                Console.WriteLine("An error occurred while reading the file.");
+            }
+        }
         public static void slowType(string text, int delayMilliseconds, bool newLine, int spaceNumber, string color)
         {
             TimeSpan delay = TimeSpan.FromMilliseconds(delayMilliseconds);
@@ -74,7 +124,44 @@ namespace Execute.SingAlone_Me_
 
 
         }
-      
+        public static void slowType2(string text,string name, int delayMilliseconds, bool newLine, int spaceNumber, string color)
+        {
+            TimeSpan delay = TimeSpan.FromMilliseconds(delayMilliseconds);
+            Console.ForegroundColor = ConsoleColor.Green;
+            switch (color)
+            {
+                case "green":
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    break;
+                case "blue":
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    break;
+                case "yellow":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    break;
+                case "red":
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    break;
+            }
+            Console.Write(name+ " ");
+            foreach (char c in text)
+            {
+                Console.Write(c);
+                Thread.Sleep(delay);
+            }
+            if (newLine)
+            {
+                Console.WriteLine("");
+                for (int i = 0; i < spaceNumber; i++)
+                {
+                    Console.WriteLine("");
+                }
+            }
+            Console.ResetColor();
+
+
+        }
+
         public static void worldExecuteMe()
         {
             slowType("Switch on the Power Line", 50,true,0,"");
@@ -257,7 +344,10 @@ namespace Execute.SingAlone_Me_
             readFile("textFiles/getError2");
             readFile("textFiles/getError2");
         }
-
+        public static void Sustain()
+        {
+        
+        }
         public static void simulateLoading(string message, int delayAmount, int barAmount)
         {
             int totalBars = 10;

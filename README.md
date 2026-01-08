@@ -16,10 +16,10 @@
 
 ### 🛠️ 修改与优化 (Changes)
 
-✅ **升级至 .NET 8.0**：抛弃了老旧的 .NET Framework 4.7.2，现在你是跨平台的了！  
-✅ **修复音画同步**：重新校准了 `Thread.Sleep` 计时逻辑，解决了原版中歌词播放速度远快于音乐的问题。  
-✅ **依赖修复**：修复了 `NAudio` 和 `AssemblyInfo` 导致的编译错误。  
-✅ **代码优化**：移除了不必要的旧版配置，现在的项目结构更加整洁。
+- ✅ **升级至 .NET 8.0**：抛弃了老旧的 .NET Framework 4.7.2，现在你是跨平台的了！
+- ✅ **修复音画同步**：重新校准了 `Thread.Sleep` 计时逻辑，解决了原版中歌词播放速度远快于音乐的问题。
+- ✅ **依赖修复**：修复了 `NAudio` 和 `AssemblyInfo` 导致的编译错误。
+- ✅ **代码优化**：移除了不必要的旧版配置，现在的项目结构更加整洁。
 
 ### 🚀 如何运行 (How to Run)
 
@@ -28,80 +28,90 @@
 ```bash
 dotnet --version
 # 如果显示 8.0.xxx 则表示已安装
-2. 克隆项目
-Bash
+```
 
-git clone [https://github.com/你的用户名/Execute.SingAlone-Me-.git](https://github.com/你的用户名/Execute.SingAlone-Me-.git)
+#### 2. 克隆项目
+```bash
+git clone https://github.com/你的用户名/Execute.SingAlone-Me-.git
 cd Execute.SingAlone-Me-
-3. 🎵 关键步骤：添加音乐文件
-由于版权原因，仓库内不包含音乐文件。你必须手动添加音乐才能运行！
+```
 
-下载 Mili - World.Execute(me); 的 MP3 文件。
+#### 3. 🎵 关键步骤：添加音乐文件
+由于版权原因，仓库内不包含音乐文件。**你必须手动添加音乐才能运行！**
 
-将文件重命名为 ghost.mp3 (必须是这个名字，全小写)。
+1. 下载 **Mili - World.Execute(me);** 的 MP3 文件。
+2. 将文件重命名为 **`ghost.mp3`** (必须是这个名字，全小写)。
+3. 将文件放入项目根目录（与 `.csproj` 文件同级）。
 
-将文件放入项目根目录（与 .csproj 文件同级）。
-
-4. 启动！
+#### 4. 启动！
 在终端中运行：
-
-Bash
-
+```bash
 dotnet run
-5. 输入口令
-当控制台加载完毕出现 > 提示符时，输入以下指令并回车：
+```
 
+#### 5. 输入口令
+当控制台加载完毕出现 `>` 提示符时，输入以下指令并回车：
+```text
 run world.exec
+```
 （尽情享受演出吧！）
 
+---
+
 <a name="english"></a>
+## 🇺🇸 English
 
-🇺🇸 English
-This is a C# Console application that renders lyrics and ASCII animations for the song "World.Execute(me);" by Mili.
+This is a C# Console application that renders lyrics and ASCII animations for the song **"World.Execute(me);"** by **Mili**.
 
-This is a forked version of KurtVelasco/Execute.SingAlone-Me-. The original project was built on the older .NET Framework, which made it difficult to run on modern systems and suffered from severe audio-visual desynchronization.
+This is a forked version of [KurtVelasco/Execute.SingAlone-Me-](https://github.com/KurtVelasco/Execute.SingAlone-Me-). The original project was built on the older .NET Framework, which made it difficult to run on modern systems and suffered from severe audio-visual desynchronization.
 
-This version has been fully remastered and fixed for a smooth experience! ✨
+**This version has been fully remastered and fixed for a smooth experience!** ✨
 
-🛠️ What's New
-✅ Upgraded to .NET 8.0: Migrated from the legacy .NET Framework 4.7.2. It is now cross-platform friendly.
+### 🛠️ What's New
 
-✅ Fixed Sync Issues: Recalibrated the Thread.Sleep logic. Lyrics and animations now perfectly match the music tempo (fixed the issue where text ran too fast).
+- ✅ **Upgraded to .NET 8.0**: Migrated from the legacy .NET Framework 4.7.2. It is now cross-platform friendly.
+- ✅ **Fixed Sync Issues**: Recalibrated the `Thread.Sleep` logic. Lyrics and animations now perfectly match the music tempo (fixed the issue where text ran too fast).
+- ✅ **Dependency Fixes**: Resolved build errors related to `NAudio` and `AssemblyInfo`.
+- ✅ **Code Cleanup**: Removed unnecessary legacy configurations for a cleaner project structure.
 
-✅ Dependency Fixes: Resolved build errors related to NAudio and AssemblyInfo.
+### 🚀 How to Run
 
-✅ Code Cleanup: Removed unnecessary legacy configurations for a cleaner project structure.
-
-🚀 How to Run
-1. Prerequisites
-Ensure you have the .NET 8.0 SDK installed.
-
-Bash
-
+#### 1. Prerequisites
+Ensure you have the **.NET 8.0 SDK** installed.
+```bash
 dotnet --version
 # Should output 8.0.xxx
-2. Clone the Repository
-Bash
+```
 
-git clone [https://github.com/YourUsername/Execute.SingAlone-Me-.git](https://github.com/YourUsername/Execute.SingAlone-Me-.git)
+#### 2. Clone the Repository
+```bash
+git clone https://github.com/YourUsername/Execute.SingAlone-Me-.git
 cd Execute.SingAlone-Me-
-3. 🎵 Crucial Step: Add Music File
-Due to copyright reasons, the music file is NOT included in the repo. You must add it manually!
+```
 
-Download the MP3 file for Mili - World.Execute(me);.
+#### 3. 🎵 Crucial Step: Add Music File
+Due to copyright reasons, the music file is NOT included in the repo. **You must add it manually!**
 
-Rename the file to ghost.mp3 (Exact name, lowercase).
+1. Download the MP3 file for **Mili - World.Execute(me);**.
+2. Rename the file to **`ghost.mp3`** (Exact name, lowercase).
+3. Place the file in the project root folder (same level as the `.csproj` file).
 
-Place the file in the project root folder (same level as the .csproj file).
-
-4. Start
+#### 4. Start
 Run the following command in your terminal:
-
-Bash
-
+```bash
 dotnet run
-5. Execution Command
-When the console finishes loading and shows the > prompt, type the following command and hit Enter:
+```
 
+#### 5. Execution Command
+When the console finishes loading and shows the `>` prompt, type the following command and hit Enter:
+```text
 run world.exec
+```
 (Enjoy the show!)
+
+---
+
+### Credits
+* **Music:** [Mili - World.Execute(me);](https://projectmili.com/)
+* **Original Code:** [KurtVelasco](https://github.com/KurtVelasco)
+* **Remastered by:** [你的名字/ID]

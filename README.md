@@ -114,4 +114,4 @@ run world.exec
 ### Credits
 * **Music:** [Mili - World.Execute(me);](https://projectmili.com/)
 * **Original Code:** [KurtVelasco](https://github.com/KurtVelasco)
-* **Remastered by:** [你的名字/ID]
+* **Remastered by:** [IoriMaboroshi](https://www.iorimaboroshi.asia)

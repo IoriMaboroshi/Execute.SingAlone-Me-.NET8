@@ -32,8 +32,8 @@ dotnet --version
 
 #### 2. 克隆项目
 ```bash
-git clone https://github.com/你的用户名/Execute.SingAlone-Me-.git
-cd Execute.SingAlone-Me-
+git clone https://github.com/IoriMaboroshi/Execute.SingAlone-Me-.NET8.git
+cd Execute.SingAlone-Me-.Net8
 ```
 
 #### 3. 🎵 关键步骤：添加音乐文件
@@ -85,8 +85,8 @@ dotnet --version
 
 #### 2. Clone the Repository
 ```bash
-git clone https://github.com/YourUsername/Execute.SingAlone-Me-.git
-cd Execute.SingAlone-Me-
+git clone https://github.com/IoriMaboroshi/Execute.SingAlone-Me-.NET8.git
+cd Execute.SingAlone-Me-.Net8
 ```
 
 #### 3. 🎵 Crucial Step: Add Music File

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -164,7 +164,7 @@ namespace Execute.SingAlone_Me_
 
         public static void worldExecuteMe()
         {
-            slowType("Switch on the Power Line", 50,true,0,"");
+            slowType("Switch on the Power Line", 80,true,0,"");
             readFile("textFiles/logoRhine");
             slowType("Remember to Put on -- P R O T E C T I O N", 50, true, 2, "");
             Console.WriteLine("\u001b[33m>encryptEnigma();\u001b[0m");
@@ -187,8 +187,8 @@ namespace Execute.SingAlone_Me_
             animateText("World world = new World(5);", "", "yellow", 1, false);
             animateText("world.addThing(me);", "", "yellow", 1, false);
             animateText("world.addThing(You);", "", "yellow", 1, false);
-            slowType("let's begin...", 30, true, 0, "");
-            slowType("T H E  S I M U L A T I O N ::", 45, true, 0, "");
+            slowType("let's begin...", 60, true, 0, "");
+            slowType("T H E  S I M U L A T I O N ::", 70, true, 0, "");
             Console.Clear();
             animateText("world.activateSimulation()", "", "yellow", 5, false);
             simulateWorld(1);
@@ -197,16 +197,17 @@ namespace Execute.SingAlone_Me_
             //2nd Chorus
             ////
             readFile("textFiles/newWorldSettings");
-            slowType("If I'm a set of points.", 50, true, 0, "");
-            slowType("then I will give you my dimensions", 45, false, 0, "");
+            Thread.Sleep(1500);
+            slowType("If I'm a set of points.", 80, true, 0, "");
+            slowType("then I will give you my dimensions", 40, false, 0, "");
             animateText("getDimension();", "[Console] then I will give you my", "green", 5, true);
             readFile("textFiles/getDimension");
-            slowType("If I'm a circle.", 70, true, 0, "");
-            slowType("then I will give you my circumference.", 45, false, 0, "");
+            slowType("If I'm a circle.", 80, true, 0, "");
+            slowType("then I will give you my circumference.", 75, false, 0, "");
             animateText("getCircumference();", "[Console] then I will give you my ", "green", 5, true);
             readFile("textFiles/getCircumference");
-            slowType("If I'm a sineWave.", 50, true, 0, "");
-            slowType("then you can sit on all my tangents", 50, false, 0, "");
+            slowType("If I'm a sineWave.", 80, true, 0, "");
+            slowType("then you can sit on all my tangents", 60, false, 0, "");
             animateText("getTangents()", "[Console]", "green", 5, false);
             readFile("textFiles/getTangent");
             slowType("If I approach infinty", 70, true, 0, "");
@@ -233,10 +234,10 @@ namespace Execute.SingAlone_Me_
             animateText("me.addLover('you')", "", "yellow", 3, false);
             slowType("soo deeply", 80, true, 0, "");
             animateText("you.addLover('me')", "", "yellow", 3, false);
-            slowType("If I can", 110, true, 0, "");
-            slowType("If I can", 110, true, 0, "");
-            slowType("give you all the", 60, true, 0, "");
-            slowType("S T I M U L A T I O N S", 60, true, 0, "");
+            slowType("If I can", 140, true, 0, "");
+            slowType("If I can", 140, true, 0, "");
+            slowType("give you all the", 90, true, 0, "");
+            slowType("S T I M U L A T I O N S", 90, true, 0, "");
             animateText("you.getAffections();", "[World] Applying 'You' ", "", 3, false);
             slowType("Then I can, then I can be your only S A S T I F A C T I O N", 40, true, 0, "");
             animateText("world.removeCharacters('all','nonEssential');", "", "yellow", 3, false);
@@ -249,9 +250,9 @@ namespace Execute.SingAlone_Me_
             slowType("Though we are trapped in this STRANGE, strange simulation", 40, true, 0, "");
             slowType("If I'm an eggplant", 90, true, 0, "");
             readFile("textFiles/getEggplant");
-            slowType("the I will you my nutrients", 70, true, 0, "");
+            slowType("the I will you my nutrients", 100, true, 0, "");
             animateText("if(me is Eggplant) =>you.addAttribute(me.getAttribute('nutrients'))", "", "", 2, false);
-            slowType("If I'm a tomato,", 85, true, 0, "");
+            slowType("If I'm a tomato,", 110, true, 0, "");
             animateText("if(me is Apple) => you.addAttribute(me.getAttribute('antioxidants'))", "", "", 2, false);
             slowType("then I will give you antioxidants", 60, true, 0, "");
             readFile("textFiles/getTomato");
@@ -267,19 +268,21 @@ namespace Execute.SingAlone_Me_
             animateText("E X I S T A N C E", "[World] Set player", "red", 3, false);
             slowType("Switch my gender to \u001b[31mF to M\u001b[0m", 75, true, 0, "");
             animateText("Male", "[World] Set player's gender:", "", 3, false);
+            Thread.Sleep(500);
             slowType("And then do whatever from \u001b[31mAM to PM\u001b[0m", 70, true, 1, "");
             animateText("UTC + 8", "[World] Changing Timezone:", "", 5, false);
             animateText("4:23 P.M 22/10/2023", "[World] Updating Time: ", "", 5, false);
             slowType("Oh, switch my role \u001b[31mS to M\u001b[0m", 85, true, 1, "");
             slowType("me.toggleLovable())", 55, true, 0, "yellow");
-            slowType("So we can enter the trance, the trance", 60, true, 0, "");
+            slowType("So we can enter the trance, the trance", 110, true, 0, "");
+            Thread.Sleep(1000);
             //List<string> trance = new List<string> { "th", "the T","the Tra", "the Tran%&^*(", "      the Trance" };
             //encryptWall(2, trance);
-            slowType("If I can,", 80, true, 0, "");
-            slowType("If I can", 80, true, 0, "");
+            slowType("If I can,", 120, true, 0, "");
+            slowType("If I can", 120, true, 0, "");
             slowType("if I can, feel your vibrations", 80, true, 0, "");
             readFile("textFiles/getVibration");
-            slowType("then I can finally be completion", 60, true, 0, "1");
+            slowType("then I can finally be completion", 80, true, 0, "1");
             simulateLoading("C O M P L E T I O N", 10, 10);
             Console.WriteLine();
             slowType("Though you have left,", 70, true, 1, "1");
@@ -305,15 +308,16 @@ namespace Execute.SingAlone_Me_
             readFile("textFiles/newWorldSettings");
             readFile("textFiles/getError");
             readFile("textFiles/getError");
+            Thread.Sleep(2500);
             Console.Clear();
             slowType("EXECUTION", 110, true, 0, "red");
-            slowType("EXECUTION", 120, true, 0, "red");
-            slowType("EXECUTION", 120, true, 0, "red");
-            slowType("EXECUTION", 120, true, 0, "red");
-            slowType("EXECUTION", 120, true, 0, "red");
-            slowType("EXECUTION", 120, true, 0, "red");
-            slowType("EXECUTION", 120, true, 0, "red");
-            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
             slowType("EXECUTION", 110, true, 0, "red");
             slowType("EXECUTION", 110, true, 0, "red");
             Console.Clear();
